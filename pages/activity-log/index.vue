@@ -1,0 +1,1 @@
+<template>Activity Log</template>
