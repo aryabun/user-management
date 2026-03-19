@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules:[
-    'nuxt-windicss'
+    'nuxt-windicss',
+    '@element-plus/nuxt'
   ],
   css: [
     '~/node_modules/bootstrap/dist/css/bootstrap.min.css',

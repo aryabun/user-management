@@ -1,15 +1,15 @@
 <template>
     <headerComponent :prop-data="breadCrum" />
     <main class="h-auto flex-1 p-6 mx-3 glass-style">
-        Activity Log
+        User Profile
     </main>
 </template>
 <script setup>
 const breadCrum = {
-    current: 'Activity Log',
+    current: 'Profile',
     list: [
         {
-            title: 'Activity Log',
+            title: 'Profile',
             link: ''
         }
     ]
