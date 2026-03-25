@@ -6,7 +6,7 @@
         <h5>{{ propData?.current }}</h5>
         <el-breadcrumb separator=">">
           <el-breadcrumb-item v-for="(value, key) in propData.list" :key="key" :to="{ path: value.link }">
-            <span class="text-gray-500">{{ value.title }}</span>
+            <span class="text-gray-500" :class="value.link ? 'underline' : 'no-underline'">{{ value.title }}</span>
           </el-breadcrumb-item>
         </el-breadcrumb>
       </div>

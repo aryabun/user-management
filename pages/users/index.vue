@@ -3,7 +3,7 @@
     <main class="h-auto flex-1 p-8 mx-3 mb-3 glass-style">
         <search-component v-model="searchQuery" />
         <div class="flex flex-row justify-end w-auto my-2">
-            <button class="glass-btn gap-2 px-4">
+            <button class="glass-btn gap-2 px-4" @click="navigateTo('users/create')">
                 <div class="flex gap-2 items-center">
                     <i class='bx bx-pencil'></i>
                     <span>Create</span>
@@ -17,7 +17,7 @@
                 <el-table-column prop="address" label="Address" />
                 <el-table-column align="right" label="Action" width="180">
                     <template #default="scope">
-                        <button class="glass-btn my-1 px-2 py-1"><i class='bx bxs-show'></i></button>
+                        <button class="glass-btn my-1 px-2 py-1" @click="navigateTo('users/view')"><i class='bx bxs-show'></i></button>
                         <button class="glass-btn my-1 px-2 py-1 text-blue-500"><i class='bx bx-edit-alt'></i></button>
                         <button class="glass-btn my-1 px-2 py-1 text-red-500"><i class='bx bx-trash'></i></button>
                     </template>
